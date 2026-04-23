@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+/*common css */
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Arvo", serif;
+}
+
+/*header*/
+.navbar-brand{
+    font-size: 1.5rem;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+/*home*/
+#home{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#resume{
+    padding-top: 120px;
+}
+
+#particles-js{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background: #527cec;
+     z-index: -1;   /* send to back */
+}
+
+#home .container{
+    position: relative;
+    z-index: 1;   /* bring text forward */
+}
+
+#name{
+    font-size: 4rem;
+    color: #fff;
+    font-size: bold;
+    font-weight: bold;
+    text-align:center;
+    margin-top: 16rem;   /* add space */
+
+
+}
+#tagline{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color:#fff;
+    text-align: center;
+
+}
+
+#learn-more{
+    padding: .4rem 1rem;
+    max-width: 10rem;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+#learn-more:hover{
+    text-decoration: none;
+
+
+}
+
+#resume{
+    width: 100%;
+    height: auto;
+}
+#resume .card{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resume .row.g-4 {
+    margin-top: 20px;
+}
+
+
+/* CARD IMPROVEMENT */
+.custom-card {
+    border:  2px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* IMAGE FIX */
+.custom-card img {
+    height: 200px;
+    object-fit: cover;
+
+
+}
+
+/* HOVER EFFECT */
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* TEXT STYLE */
+.card-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+
+
+/* portfolio */
+#portfolio{
+    width:100%;
+    height: auto;
+    padding: 4rem 0;
+
+}
+#portfolio .img{
+    margin: 30px;
+    width: 100%;
+    width: 100%;
+    height: 220px;
+}
+
+#portfolio .grid{
+    position: relative;
+    width: 100%;
+
+}
+#portfolio .grid .overlay{
+    position: absolute;
+    margin-top: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;right: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: #527cec;
+}
+#portfolio .grid:hover .overlay{
+    opacity: 1;
+}
+.text{
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
